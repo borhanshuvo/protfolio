@@ -1,0 +1,45 @@
+.navbar-style li a {
+    color: white;
+    position: relative;
+}
+
+.navbar-style li a::before {
+    content: "";
+    width: 0px;
+    height: 2px;
+    background: rgb(245, 241, 241);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-style li a:hover::before {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar-style li a:hover::before {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-style li a:hover::before {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-style li a:hover::before {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar-style li a:hover::before {
+        width: 100%;
+    }
+}
