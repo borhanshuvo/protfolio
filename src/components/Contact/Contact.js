@@ -5,28 +5,42 @@ const Contact = () => {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+        emailjs.sendForm('gmail', 'contactFrom', e.target, 'user_Qddm2MlS724TZ43umn4K6')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
+            e.target.reset();
     }
     return (
-        <div className="d-flex justify-content-center align-items-center">
-            <div className="card" >
-                <div className="card-body">
-                    <form onSubmit={sendEmail}>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" />
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+        <div className="pt-5 container">
+            <h1 className="text-center">Contact</h1>
+            <div className="d-flex justify-content-center pt-5">
+                <div className="card">
+                    <div className="card-body text-dark">
+                        <form class="row g-3" onSubmit={sendEmail}>
+                            <div class="col-12">
+                                <label for="username" class="form-label">Name</label>
+                                <input type="text" name="username" class="form-control" id="username" placeholder="Your Name" required />
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Your E-mail Address" required />
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required />
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea name="message" id="message" cols="15" rows="10" class="form-control" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

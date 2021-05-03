@@ -2,8 +2,11 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div>
-            <h1>About</h1>
+        <div className="container">
+            <div className="row">
+                <div className="col-md-4"></div>
+                <div className="col-md-8"></div>
+            </div>
         </div>
     );
 };
