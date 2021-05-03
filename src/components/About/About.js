@@ -13,7 +13,7 @@ const About = () => {
         borderRadius: '5px',
     }
     return (
-        <div className="container pt-5">
+        <div className="container pt-5 pb-5">
             <div className="row">
                 <div className="col-md-5 pt-5 pb-5">
                     <div className="ps-4">

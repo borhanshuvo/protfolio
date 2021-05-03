@@ -1,5 +1,5 @@
 import { faFacebookSquare, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -8,10 +8,14 @@ import profileImage from '../../images/shuvo.jpg'
 import resume from '../../resume/Borhan_Uddin_Resume .pdf';
 
 const Home = () => {
-    const iconStyle = { fontSize: '40px', color: 'white' }
+    const iconStyle = { fontSize: '40px', color: 'white' };
+    const btnDesign = { fontSize: '15px', backgroundImage: 'linear-gradient(90deg, #19D3AF, #0FCFEA)', border: 'none', padding: '10px 20px', color: '#3A4256', borderRadius: '10px', textDecoration: 'none' };
+    const textColor2 = { color: '#b4b5b5' };
+    const headingColor = { color: '#3A4256' };
+    const textColor = { color: '#3A3056' };
     return (
         <>
-            <div className="container pt-5">
+            <div className="container pt-5 pb-5">
                 <div className="row">
                     <div className="col-md-6 pt-5 pb-5">
                         <h5 className="pt-5"><span style={{ fontSize: '30px' }}>Hey, I'm BORHAN UDDIN.</span> </h5>
@@ -25,7 +29,7 @@ const Home = () => {
                             />
                         </span>
 
-                        <p>
+                        <p className="pb-3">
                             <Typical
                                 loop={Infinity}
                                 wrapper="p"
@@ -34,8 +38,8 @@ const Home = () => {
                                 ]}
                             />
                         </p>
-                        <Link className="btn btn-primary" to={`${resume}`} target="_blank" download>RESUME</Link><br />
-                        <div className="pt-4">
+                        <Link style={btnDesign} to={`${resume}`} target="_blank" download><FontAwesomeIcon icon={faDownload} /> RESUME</Link><br />
+                        <div className="pt-5">
                             <span className="pe-4">
                                 <a href="https://web.facebook.com/borhan814/" target="_blank"><FontAwesomeIcon style={iconStyle} icon={faFacebookSquare} /></a>
                             </span>

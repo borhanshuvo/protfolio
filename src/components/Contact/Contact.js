@@ -13,8 +13,9 @@ const Contact = () => {
             });
             e.target.reset();
     }
+    const btnDesign = { fontSize: '15px', backgroundImage: 'linear-gradient(90deg, #19D3AF, #0FCFEA)', border: 'none', padding: '10px 20px', color: 'black', borderRadius: '10px', textDecoration: 'none' };
     return (
-        <div className="pt-5 container">
+        <div className="pt-5 container pb-5">
             <h1 className="text-center">Contact</h1>
             <div className="d-flex justify-content-center pt-5">
                 <div className="card">
@@ -37,7 +38,7 @@ const Contact = () => {
                                 <textarea name="message" id="message" cols="15" rows="10" class="form-control" placeholder="Message" required></textarea>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Send</button>
+                                <button type="submit" style={btnDesign}>Send Message</button>
                             </div>
                         </form>
                     </div>
