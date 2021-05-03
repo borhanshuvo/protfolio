@@ -30,7 +30,7 @@ const Home = () => {
                                 loop={Infinity}
                                 wrapper="p"
                                 steps={[
-                                    'I am a Full Stack Web Developer who likes to build things that works on the web. I want to work in a dynamic team where I can utilize my knowledge and learn new technologies', 3000
+                                    'I am a Full Stack Web Developer who likes to build things that works on the web. I want to work in a dynamic team where I can utilize my knowledge and learn new technologies.', 3000
                                 ]}
                             />
                         </p>
