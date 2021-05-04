@@ -53,7 +53,7 @@ const Project = () => {
                                     <h5 className="card-title text-uppercase">{pd.title}</h5>
                                 </div>
                                 <div className="row">
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 pb-3">
                                         <img src={pd.image} className="img-fluid" alt="" />
                                     </div>
                                     <div className="col-md-6">

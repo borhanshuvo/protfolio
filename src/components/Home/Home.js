@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Typical from 'react-typical';
 import profileImage from '../../images/shuvo.jpg'
-import resume from '../../resume/Borhan_Uddin_Resume .pdf';
+import resume from '../../resume/Borhan_Uddin_Resume.pdf';
 
 const Home = () => {
     const iconStyle = { fontSize: '40px', color: 'white' };
