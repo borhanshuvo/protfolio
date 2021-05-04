@@ -50,7 +50,6 @@ const About = () => {
                     </div>
                     <div className="familiar pb-3">
                         <p><b><u>FAMILIAR</u></b></p>
-                        <label>HTML5</label>
                         <label>Node.js</label>
                         <label>Express.js</label>
                         <label>MongoDB</label>
