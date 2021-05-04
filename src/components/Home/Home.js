@@ -16,7 +16,7 @@ const Home = () => {
     return (
         <>
             <div className="container pt-5 pb-5">
-                <div className="row">
+                <div className="row pt-5">
                     <div className="col-md-6 pt-5 pb-5">
                         <h5 className="pt-5"><span style={{ fontSize: '30px' }}>Hey, I'm BORHAN UDDIN.</span> </h5>
                         <span style={{ fontSize: '20px' }}>
