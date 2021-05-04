@@ -22,7 +22,7 @@ const projectData = [
     },
     {
         title: "Click To Buy ( mern )",
-        description: "Food Stall is a food searching app using HTML5, CSS3, Bootstrap, JavaScript and Netlify",
+        description: "Click to Buy is ecommerce web application. There are two type of user one is 'Admin' who can add product, manage product another one is 'Customer' who can order any product and see their previous order history.",
         tools: 'React.js, React Router, HTML5, CSS3, Bootstrap, JavaScript, Node.js, Express, MongoDB, Heroku and Firebase',
         code: "https://github.com/borhanshuvo/click-to-buy-client",
         live: "https://click-to-buy-6fa3e.web.app/",
@@ -32,7 +32,7 @@ const projectData = [
     {
         title: "English Premier League",
         description: "English Premier League is a Sports related web application. Where user can see the team information",
-        tools: 'React.js, React Router, HTML5, CSS3, Bootstrap, JavaScript and Firebase',
+        tools: 'React.js, React Router, HTML5, CSS3, Bootstrap, JavaScript and Netlify',
         code: "https://github.com/borhanshuvo/english-premier-league",
         live: "https://youthful-bose-290646.netlify.app/",
         image: premierLeague,
