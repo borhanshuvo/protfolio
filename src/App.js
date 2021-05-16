@@ -11,12 +11,10 @@ import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./components/NotFound/NotFound";
 import Project from "./components/Project/Project";
 import Contact from './components/Contact/Contact';
-import Particle from './components/Particle/Particle';
 
 function App() {
   return (
     <div className="App-header">
-      <Particle />
       <Router>
         <Navbar></Navbar>
         <Switch>
@@ -48,9 +46,9 @@ function App() {
           <Route path="*">
             <NotFound></NotFound>
           </Route>
-
+          
         </Switch>
-
+        
       </Router>
     </div>
   );
