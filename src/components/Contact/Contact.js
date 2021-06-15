@@ -1,17 +1,25 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import swal from 'sweetalert';
+import toast from 'react-hot-toast';
 
 const Contact = () => {
     function sendEmail(e) {
+        const loading = toast.loading('Please wait...!');
         e.preventDefault();
 
         emailjs.sendForm('gmail', 'contactFrom', e.target, 'user_Qddm2MlS724TZ43umn4K6')
             .then((result) => {
-                console.log(result.text);
+                toast.dismiss(loading);
+                if (result) {
+                    e.target.reset();
+                    return swal("Thank You", "Message Sent Successfully.", "success");
+                }
+                swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
             }, (error) => {
-                console.log(error.text);
+                toast.dismiss(loading);
+                swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
             });
-            e.target.reset();
     }
     const btnDesign = { fontSize: '15px', backgroundImage: 'linear-gradient(90deg, #19D3AF, #0FCFEA)', border: 'none', padding: '10px 20px', color: 'black', borderRadius: '10px', textDecoration: 'none' };
     return (
