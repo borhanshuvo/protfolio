@@ -20,16 +20,45 @@
 
 .footer-social .social li a.facebook {
   color: #00ccff;
+  font-size: 20px;
 }
 
 .footer-social .social li a.gmail {
   color: #0066ff;
+  font-size: 20px;
 }
 
 .footer-social .social li a.linkedin {
   color: #ff0066;
+  font-size: 20px;
 }
 
 .footer-social .social li a.github {
   color: #ffffff;
+  font-size: 20px;
+}
+
+.mail a {
+  font-size: 60px;
+  font-weight: 700;
+  color: #89715b;
+  margin-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.mail a:hover {
+  color: antiquewhite;
+}
+
+.mail-title {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.mail-div {
+  padding: 200px 0px 200px 0px;
 }

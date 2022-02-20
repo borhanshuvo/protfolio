@@ -1,11 +1,11 @@
 import {
-    faFacebookSquare,
-    faGithubSquare,
-    faLinkedin
+  faFacebookSquare,
+  faGithubSquare,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import {
-    faDownload,
-    faEnvelopeSquare
+  faDownload,
+  faEnvelopeSquare
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";

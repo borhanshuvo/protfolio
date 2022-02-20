@@ -81,6 +81,8 @@ const Project = () => {
   };
   return (
     <div className="container pt-5">
+      <h2 className="text-center">My Project</h2>
+      <hr />
       <div className="row pt-5">
         {projectData.map((pd, index) => (
           <div className="col-md-4 pb-5" key={index}>
@@ -127,10 +129,7 @@ const Project = () => {
                 </button>
               </div>
               <div className="card-body">
-                <p
-                  className="card-text"
-                  style={{ textAlign: "justify" }}
-                >
+                <p className="card-text" style={{ textAlign: "justify" }}>
                   {pd.description}
                 </p>
                 <p className="card-text" style={{ textAlign: "justify" }}>

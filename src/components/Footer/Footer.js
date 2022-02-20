@@ -5,8 +5,8 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="text-center mx-5">
-        <h4 className="title">Let’s work together</h4>
+      <div className="text-center mail-div">
+        <h4 className="mail-title">Let’s work together</h4>
         <h2 className="mail">
           <a href="mailto:borhan015@gmail.com">borhan015@gmail.com</a>
         </h2>
@@ -15,7 +15,11 @@ const Footer = () => {
         <div>
           <p>
             {" "}
-            &copy; <span> Borhan Uddin {year} , all rights reserved.</span>{" "}
+            &copy;{" "}
+            <span style={{ fontSize: "20px" }}>
+              {" "}
+              Borhan Uddin {year} , all rights reserved.
+            </span>{" "}
           </p>
         </div>
         <div className="footer-social">
