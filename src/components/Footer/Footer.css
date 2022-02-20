@@ -1,0 +1,35 @@
+.footer-social {
+  padding-bottom: 20px;
+}
+
+.footer-social .social {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.footer-social .social a {
+  text-decoration: none;
+}
+
+.footer-social .social li {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.footer-social .social li a.facebook {
+  color: #00ccff;
+}
+
+.footer-social .social li a.gmail {
+  color: #0066ff;
+}
+
+.footer-social .social li a.linkedin {
+  color: #ff0066;
+}
+
+.footer-social .social li a.github {
+  color: #ffffff;
+}
