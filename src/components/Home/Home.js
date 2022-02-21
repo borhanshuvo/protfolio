@@ -11,9 +11,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import Typical from "react-typical";
-import profileImage from "../../images/shuvo.jpg";
+import developerImg from "../../images/developer.jpg";
 import resume from "../../resume/Borhan_Uddin_Resume.pdf";
 import About from "../About/About";
+import Blog from "../Blog/Blog";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import Project from "../Project/Project";
@@ -60,7 +61,7 @@ const Home = () => {
                 loop={Infinity}
                 wrapper="p"
                 steps={[
-                  "I am a Full Stack Web Developer who likes to build things that works on the web. I want to work in a dynamic team where I can utilize my knowledge and learn new technologies.",
+                  "I am a Full Stack Web Developer who likes to build things that works on the web. If you're looking for a developer to add to your team, I'd love to hear from you!",
                   3000,
                 ]}
               />
@@ -68,6 +69,7 @@ const Home = () => {
             <Link style={btnDesign} to={`${resume}`} target="_blank" download>
               <FontAwesomeIcon icon={faDownload} /> RESUME
             </Link>
+            <Link to="#contact">Hire Me</Link>
             <br />
             <div className="pt-5">
               <span className="pe-4">
@@ -109,14 +111,12 @@ const Home = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="p-1">
+            <div className="ms-md-5 mt-md-5 pt-md-5">
               <img
-                src={profileImage}
-                className="img-fluid"
+                src={developerImg}
+                className="w-100"
                 style={{
                   borderRadius: "20px",
-                  height: "500px",
-                  width: "400px",
                 }}
                 alt=""
               />
@@ -128,6 +128,9 @@ const Home = () => {
         </div>
         <div>
           <Project />
+        </div>
+        <div>
+          <Blog />
         </div>
         <div>
           <Contact />

@@ -80,10 +80,10 @@ const Project = () => {
     textDecoration: "none",
   };
   return (
-    <div className="container pt-5">
-      <h2 className="text-center">My Project</h2>
+    <div className="container my-5">
+      <h2 className="text-center saira-condensed">M y &nbsp; P r o j e c t</h2>
       <hr />
-      <div className="row pt-5">
+      <div className="row">
         {projectData.map((pd, index) => (
           <div className="col-md-4 pb-5" key={index}>
             <div className="card  text-dark text-center h-100">

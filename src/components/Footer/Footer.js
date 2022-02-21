@@ -8,21 +8,25 @@ const Footer = () => {
       <div className="text-center mail-div">
         <h4 className="mail-title">Let’s work together</h4>
         <h2 className="mail">
-          <a href="mailto:borhan015@gmail.com">borhan015@gmail.com</a>
+          <a
+            href="mailto:borhan015@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="fs-60"
+          >
+            borhan015@gmail.com
+          </a>
         </h2>
       </div>
-      <div className="d-flex justify-content-between">
-        <div>
+      <div className="row">
+        <div className="col-md-6 order-1 order-md-0">
           <p>
-            {" "}
-            &copy;{" "}
-            <span style={{ fontSize: "20px" }}>
-              {" "}
-              Borhan Uddin {year} , all rights reserved.
-            </span>{" "}
+            <span className="fs-20">
+              Copyright &copy; {year}, Borhan Uddin, All Rights Reserved.
+            </span>
           </p>
         </div>
-        <div className="footer-social">
+        <div className="col-md-6 footer-social order-0 order-md-1 d-md-flex justify-content-end">
           <ul className="social">
             <li>
               <a

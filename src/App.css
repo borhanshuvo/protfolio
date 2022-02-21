@@ -1,5 +1,21 @@
 .App-header {
-  background-color: #0A192F;
+  background-color: #0a192f;
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
   color: white;
+}
+
+.bebas-neue {
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.saira-condensed {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
 }

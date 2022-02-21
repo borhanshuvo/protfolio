@@ -39,7 +39,6 @@
 }
 
 .mail a {
-  font-size: 60px;
   font-weight: 700;
   color: #89715b;
   margin-top: 10px;
@@ -61,4 +60,22 @@
 
 .mail-div {
   padding: 200px 0px 200px 0px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .fs-20 {
+    font-size: 14px;
+  }
+
+  .fs-60 {
+    font-size: 25px;
+  }
 }
