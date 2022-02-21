@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ReactHtmlParser from "react-html-parser";
 
 const Blog = () => {
   // {/* medium api call :  https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@borhan015 */}
@@ -42,11 +41,11 @@ const Blog = () => {
                     </p>
                   </div>
                   <p className="card-text" style={{ textAlign: "justify" }}>
-                    {ReactHtmlParser(blog?.description)}
+                    {/* {ReactHtmlParser(blog?.description)} */}
                   </p>
-                  <p className="card-text" style={{ textAlign: "justify" }}>
+                  {/* <p className="card-text" style={{ textAlign: "justify" }}>
                     {ReactHtmlParser(blog.content)}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

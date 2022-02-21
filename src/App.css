@@ -1,6 +1,6 @@
 .App-header {
-  background-color: #0a192f;
-  font-family: "Poppins", sans-serif;
+  background-color: #1f2028;
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
   color: white;
 }
@@ -18,4 +18,200 @@
 .saira-condensed {
   font-family: "Saira Condensed", sans-serif;
   font-weight: 700;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+.w-sm-100 {
+  width: 80%;
+}
+
+/* About section css start */
+
+.comfortable label {
+  background-color: gray;
+  padding: 10px 20px;
+  margin: 5px 5px;
+}
+
+.familiar label {
+  background-color: gray;
+  padding: 10px 20px;
+  margin: 5px 5px;
+}
+
+.tools label {
+  background-color: gray;
+  padding: 10px 20px;
+  margin: 5px 5px;
+}
+/* About section css end */
+
+/* Project section css start */
+
+.custom-card {
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+
+.custom-card-front {
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.custom-card-back {
+  height: 100%;
+  width: 100%;
+  top: -100px;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  position: relative;
+}
+
+.custom-card:hover .custom-card-front {
+  transform: rotateX(-180deg);
+}
+
+.custom-card:hover .custom-card-back {
+  transform: rotateX(0deg);
+}
+
+/* Project section css end */
+
+/* contact section form css start */
+
+.input-form {
+  background-color: transparent;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: white;
+  margin: 10px 0px;
+}
+
+.input-form:focus {
+  color: white;
+}
+
+.form-button {
+  border: 1px solid green;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.form-button:hover {
+  color: #ffffff;
+  background-color: #1f2028;
+  border: 1px solid whitesmoke;
+}
+
+/* contact section form css end */
+
+/* footer section css start */
+.footer-social {
+  padding-bottom: 20px;
+}
+
+.footer-social .social {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.footer-social .social a {
+  text-decoration: none;
+}
+
+.footer-social .social li {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.footer-social .social li a.facebook {
+  color: #00ccff;
+  font-size: 20px;
+}
+
+.footer-social .social li a.gmail {
+  color: #ff0066;
+  font-size: 20px;
+}
+
+.footer-social .social li a.linkedin {
+  color: #0066ff;
+  font-size: 20px;
+}
+
+.footer-social .social li a.github {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.mail a {
+  font-weight: 700;
+  color: #89715b;
+  margin-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.mail a:hover {
+  color: antiquewhite;
+}
+
+.mail-title {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.mail-div {
+  padding: 200px 0px 200px 0px;
+}
+
+/* footer section css end */
+
+/* For responsive */
+
+@media screen and (max-width: 600px) {
+  .fs-20 {
+    font-size: 14px;
+  }
+
+  .fs-30 {
+    font-size: 24px;
+  }
+
+  .fs-60 {
+    font-size: 25px;
+  }
+
+  .w-sm-100 {
+    width: 100%;
+  }
 }

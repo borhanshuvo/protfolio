@@ -15,6 +15,7 @@ import virtualExpert2 from "../../images/virtualExpert2.png";
 
 const projectData = [
   {
+    id: "1",
     title: "Easy Essay Witting",
     description:
       "Admin user can dynamically changes home page. Implemented similar affiliate marketing functionality (user can refer another user). Online payment processing using STRIPE.",
@@ -25,6 +26,7 @@ const projectData = [
     image2: easyEssayWriting2,
   },
   {
+    id: "2",
     title: "Virtual Expert",
     description:
       "Admin user can dynamically changes all pages and create, manage service card. Implemented Invoice functionality. User can order any service.",
@@ -35,6 +37,7 @@ const projectData = [
     image2: virtualExpert2,
   },
   {
+    id: "3",
     title: "Event Management",
     description:
       "Event Management is a event booking web application. There are two type of user. One is 'Admin' who can create event service, manage event service and also can add another admin. Another one is 'Customer' who can book any event including payment using Stripe online payment process. Customer can see order status and give review with rating.",
@@ -46,6 +49,7 @@ const projectData = [
     image2: eventManagement2,
   },
   {
+    id: "4",
     title: "Click To Buy",
     description:
       "Click to Buy is ecommerce web application. There are two type of user one is 'Admin' who can add product, manage product another one is 'Customer' who can order any product and see their previous order history.",
@@ -57,6 +61,7 @@ const projectData = [
     image2: clickToBuy2,
   },
   {
+    id: "5",
     title: "English Premier League",
     description:
       "English Premier League is a Sports related web application. Where user can see the team information",
@@ -86,7 +91,49 @@ const Project = () => {
       <div className="row">
         {projectData.map((pd, index) => (
           <div className="col-md-4 pb-5" key={index}>
-            <div className="card  text-dark text-center h-100">
+            <div class="custom-card">
+              <div class="custom-card-front">
+                <h5 className="card-title text-center text-uppercase">
+                  {pd.title}
+                </h5>
+                <div
+                  id={`carouselExampleIndicators${index + 1}`}
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src={pd.image} class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src={pd.image2} class="d-block w-100" alt="..." />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-card-back">
+                <div className="d-flex justify-content-center">
+                  <a
+                    href={pd.live}
+                    target="_blank"
+                    style={btnDesign}
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faLink} /> Live Project
+                  </a>
+                  &nbsp;
+                  <a
+                    href={pd.code}
+                    target="_blank"
+                    style={btnDesign}
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faGithub} /> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* <div className="card  text-dark text-center h-100">
               <div className="card-header">
                 <h5 className="card-title text-uppercase">{pd.title}</h5>
               </div>
@@ -155,7 +202,7 @@ const Project = () => {
                   <FontAwesomeIcon icon={faGithub} /> GitHub
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

@@ -1,14 +1,9 @@
-import {
-  faFacebookSquare,
-  faGithubSquare,
-  faLinkedin
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faDownload,
-  faEnvelopeSquare
-} from "@fortawesome/free-solid-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
 import { Link } from "react-router-dom";
 import Typical from "react-typical";
 import developerImg from "../../images/developer.jpg";
@@ -20,7 +15,6 @@ import Footer from "../Footer/Footer";
 import Project from "../Project/Project";
 
 const Home = () => {
-  const iconStyle = { fontSize: "40px", color: "white" };
   const btnDesign = {
     fontSize: "15px",
     backgroundImage: "linear-gradient(90deg, #19D3AF, #0FCFEA)",
@@ -66,10 +60,12 @@ const Home = () => {
                 ]}
               />
             </p>
-            <Link style={btnDesign} to={`${resume}`} target="_blank" download>
+            <Link style={btnDesign} to={`${resume}`} target="_blank" download className="mx-2">
               <FontAwesomeIcon icon={faDownload} /> RESUME
             </Link>
-            <Link to="#contact">Hire Me</Link>
+            <Link to="#contact" style={btnDesign} className="mx-2">
+              Hire Me
+            </Link>
             <br />
             <div className="pt-5">
               <span className="pe-4">
@@ -78,7 +74,7 @@ const Home = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon style={iconStyle} icon={faFacebookSquare} />
+                  <BsFacebook className="fs-2 text-primary" />
                 </a>
               </span>
               <span className="pe-4">
@@ -87,7 +83,7 @@ const Home = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon style={iconStyle} icon={faEnvelopeSquare} />
+                  <SiGmail className="fs-2 text-danger" />
                 </a>
               </span>
               <span className="pe-4">
@@ -96,7 +92,7 @@ const Home = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon style={iconStyle} icon={faLinkedin} />
+                  <AiFillLinkedin className="fs-2 text-primary" />
                 </a>
               </span>
               <span>
@@ -105,7 +101,7 @@ const Home = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} />
+                  <AiFillGithub className="fs-2 text-white" />
                 </a>
               </span>
             </div>

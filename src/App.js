@@ -1,24 +1,19 @@
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
 import About from "./components/About/About";
 import Blog from "./components/Blog/Blog";
+import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./components/NotFound/NotFound";
 import Project from "./components/Project/Project";
-import Contact from './components/Contact/Contact';
 
 function App() {
   return (
     <div className="App-header">
       <Router>
-        <Navbar></Navbar>
+        <Navbar />
         <Switch>
-
           <Route exact path="/">
             <Home />
           </Route>
@@ -46,9 +41,7 @@ function App() {
           <Route path="*">
             <NotFound></NotFound>
           </Route>
-          
         </Switch>
-        
       </Router>
     </div>
   );

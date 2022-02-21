@@ -8,11 +8,11 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg pt-4 navbar-dark">
-        <div class="container-fluid">
-          <div className="ms-auto">
+      <nav className="navbar navbar-expand-lg pt-4 navbar-dark fixed-top" style={{ backgroundColor: "#1f2028" }}>
+        <div className="container-fluid">
+          <div classNameName="ms-auto">
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -20,59 +20,59 @@ const Navbar = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
           </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-style">
-              <li class="nav-item pe-4">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 navbar-style">
+              <li className="nav-item pe-4">
                 <Link
-                  class="nav-link text-white"
+                  className="nav-link text-white"
                   aria-current="page"
                   to="/home"
                 >
                   HOME
                 </Link>
               </li>
-              <li class="nav-item pe-4">
+              <li className="nav-item pe-4">
                 <Link
-                  class="nav-link text-white"
+                  className="nav-link text-white"
                   aria-current="page"
                   to="/about"
                 >
                   ABOUT
                 </Link>
               </li>
-              <li class="nav-item pe-4">
+              <li className="nav-item pe-4">
                 <Link
-                  class="nav-link text-white"
+                  className="nav-link text-white"
                   aria-current="page"
                   to="/project"
                 >
                   PROJECTS
                 </Link>
               </li>
-              <li class="nav-item pe-4">
+              <li className="nav-item pe-4">
                 <Link
-                  class="nav-link text-white"
+                  className="nav-link text-white"
                   aria-current="page"
                   to="/blog"
                 >
                   BLOGS
                 </Link>
               </li>
-              <li class="nav-item pe-4">
+              <li className="nav-item pe-4">
                 <Link
-                  class="nav-link text-white"
+                  className="nav-link text-white"
                   aria-current="page"
                   to="/contact"
                 >
                   CONTACT
                 </Link>
               </li>
-              <li class="nav-item pe-4">
+              <li className="nav-item pe-4">
                 <Link
-                  class="nav-link text-white"
+                  className="nav-link text-white"
                   ria-current="page"
                   to={`${resume}`}
                   target="_blank"

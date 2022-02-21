@@ -1,112 +1,159 @@
-import emailjs from "emailjs-com";
 import React from "react";
-import toast from "react-hot-toast";
+import { useForm } from "react-hook-form";
+import { MdLocationPin, MdOutlineMail, MdPhone } from "react-icons/md";
 import swal from "sweetalert";
 
 const Contact = () => {
-  function sendEmail(e) {
-    const loading = toast.loading("Please wait...!");
-    e.preventDefault();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
 
-    emailjs
-      .sendForm("gmail", "contactFrom", e.target, "user_Qddm2MlS724TZ43umn4K6")
-      .then(
-        (result) => {
-          toast.dismiss(loading);
-          if (result) {
-            e.target.reset();
-            return swal("Thank You", "Message Sent Successfully.", "success");
-          }
-          swal("Failed!", "Something went wrong! Please try again.", "error", {
-            dangerMode: true,
-          });
+  const onSubmit = (data, e) => {
+    const msgTemplate = {
+      service_id: "service_8sspudb",
+      template_id: "contactFrom",
+      user_id: "user_Qddm2MlS724TZ43umn4K6",
+      template_params: {
+        username: data.username,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+      },
+    };
+
+    console.log(msgTemplate);
+
+    const mail = async () => {
+      const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
         },
-        (error) => {
-          toast.dismiss(loading);
-          swal("Failed!", "Something went wrong! Please try again.", "error", {
-            dangerMode: true,
-          });
-        }
-      );
-  }
-  const btnDesign = {
-    fontSize: "15px",
-    backgroundImage: "linear-gradient(90deg, #19D3AF, #0FCFEA)",
-    border: "none",
-    padding: "10px 20px",
-    color: "black",
-    borderRadius: "10px",
-    textDecoration: "none",
+        body: JSON.stringify(msgTemplate),
+      });
+
+      if (res.status === 200) {
+        e.target.reset();
+        return swal("Thank You", "Message Sent Successfully.", "success");
+      }
+      swal("Failed!", "Something went wrong! Please try again.", "error", {
+        dangerMode: true,
+      });
+    };
+    mail();
   };
+
   return (
     <div className="pt-5 container pb-5" id="#contact">
       <h1 className="text-center saira-condensed">
         G e t &nbsp; i n &nbsp; T o u c h
       </h1>
       <hr />
-      <div className="d-flex justify-content-center pt-5">
-        <div className="card">
-          <div className="card-body text-dark">
-            <form class="row g-3" onSubmit={sendEmail}>
-              <div class="col-12">
-                <label for="username" class="form-label">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  name="username"
-                  class="form-control"
-                  id="username"
-                  placeholder="Your Name"
-                  required
-                />
+      <div className="row">
+        <div className="col-md-5">
+          <div className="my-5 py-5">
+            <div className="saira-condensed d-flex">
+              <p>
+                <MdPhone className="fs-40 me-4" />
+              </p>
+              <p className="fs-20">
+                P h o n e <br /> + 8 8 0 1 7 8 1 9 7 2 2 1 0
+              </p>
+            </div>
+            <div className="saira-condensed d-flex">
+              <p>
+                <MdOutlineMail className="fs-40 me-4" />
+              </p>
+              <p className="fs-20">
+                E m a i l <br /> b o r h a n 0 1 5 @ g m a i l . c o m
+              </p>
+            </div>
+            <div className="saira-condensed d-flex">
+              <p>
+                {" "}
+                <MdLocationPin className="fs-40 me-4" />
+              </p>
+              <p className="fs-20">
+                L o c a t i o n <br /> C h a n d p u r , C h i t t a g o n g , B
+                a n g l a d e s h
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-7">
+          <div className="w-sm-100">
+            <div>
+              <div>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                  <div>
+                    <label for="username" className="form-label">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      name="username"
+                      className="input-form"
+                      id="username"
+                      placeholder="Your Name"
+                      autoComplete="off"
+                      required
+                      {...register("username")}
+                    />
+                  </div>
+                  <div>
+                    <label for="email" className="form-label">
+                      E-mail
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      className="input-form"
+                      id="email"
+                      placeholder="Your E-mail Address"
+                      autoComplete="off"
+                      required
+                      {...register("email")}
+                    />
+                  </div>
+                  <div>
+                    <label for="subject" className="form-label">
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      name="subject"
+                      className="input-form"
+                      id="subject"
+                      placeholder="Subject"
+                      autoComplete="off"
+                      required
+                      {...register("subject")}
+                    />
+                  </div>
+                  <div>
+                    <label for="message" className="form-label">
+                      Message
+                    </label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="8"
+                      rows="6"
+                      className="input-form"
+                      placeholder="Message"
+                      required
+                      {...register("message")}
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <input type="submit" value="Send Message" className="form-button" />
+                  </div>
+                </form>
               </div>
-              <div class="col-12">
-                <label for="email" class="form-label">
-                  E-mail
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Your E-mail Address"
-                  required
-                />
-              </div>
-              <div class="col-12">
-                <label for="subject" class="form-label">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  name="subject"
-                  class="form-control"
-                  id="subject"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div class="col-12">
-                <label for="message" class="form-label">
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="15"
-                  rows="10"
-                  class="form-control"
-                  placeholder="Message"
-                  required
-                ></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" style={btnDesign}>
-                  Send Message
-                </button>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
