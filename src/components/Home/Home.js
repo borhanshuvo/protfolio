@@ -60,12 +60,20 @@ const Home = () => {
                 ]}
               />
             </p>
-            <Link style={btnDesign} to={`${resume}`} target="_blank" download className="mx-2">
-              <FontAwesomeIcon icon={faDownload} /> RESUME
-            </Link>
-            <Link to="#contact" style={btnDesign} className="mx-2">
-              Hire Me
-            </Link>
+            <div>
+              <Link
+                style={btnDesign}
+                to={`${resume}`}
+                target="_blank"
+                download
+                className="mx-2"
+              >
+                <FontAwesomeIcon icon={faDownload} /> RESUME
+              </Link>
+              <Link to="#contact" style={btnDesign} className="mx-2">
+                Hire Me
+              </Link>
+            </div>
             <br />
             <div className="pt-5">
               <span className="pe-4">

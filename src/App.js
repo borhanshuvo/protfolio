@@ -1,3 +1,4 @@
+import { FaArrowUp } from "react-icons/fa";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import About from "./components/About/About";
@@ -9,6 +10,9 @@ import NotFound from "./components/NotFound/NotFound";
 import Project from "./components/Project/Project";
 
 function App() {
+  const handelClickTop = () => {
+    window.scroll(0, 0);
+  };
   return (
     <div className="App-header">
       <Router>
@@ -42,6 +46,12 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <div
+          onClick={handelClickTop}
+          className="me-5 position-fixed end-0 top-80 cursor-pointer bg-light"
+        >
+          <FaArrowUp className="scrol-icon" />
+        </div>
       </Router>
     </div>
   );

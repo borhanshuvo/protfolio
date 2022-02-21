@@ -20,6 +20,18 @@
   font-weight: 700;
 }
 
+.scrol-icon {
+  background-color: #1f2028;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.top-80 {
+  top: 90%;
+}
+
 .fs-16 {
   font-size: 16px;
 }
@@ -213,5 +225,9 @@
 
   .w-sm-100 {
     width: 100%;
+  }
+
+  .display-sm-none {
+    display: none;
   }
 }
