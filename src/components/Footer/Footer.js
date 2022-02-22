@@ -17,7 +17,7 @@ const Footer = () => {
           </a>
         </h2>
       </div>
-      <div>
+      <div className="mt-md-0 mt-5">
         <p className="fs-16 text-center">
           <span>
             Copyright &copy; {year} Borhan Uddin, All Rights Reserved.
