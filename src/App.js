@@ -10,7 +10,7 @@ function App() {
     window.scroll(0, 0);
   };
   return (
-    <div className="App-header">
+    <div className="App-header overflow-hidden">
       <Router>
         <Navbar />
         <Switch>
@@ -24,7 +24,7 @@ function App() {
         </Switch>
         <div
           onClick={handelClickTop}
-          className="me-5 position-fixed end-0 top-80 cursor-pointer bg-light"
+          className="me-md-5 me-3 position-fixed end-0 top-80 cursor-pointer bg-light"
         >
           <FaArrowUp className="scrol-icon" />
         </div>

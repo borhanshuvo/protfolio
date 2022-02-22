@@ -239,4 +239,14 @@
   .display-sm-none {
     display: none;
   }
+
+  .top-80 {
+    top: 92%;
+  }
+
+  .logo-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+  }
 }

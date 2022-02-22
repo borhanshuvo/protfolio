@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <section className="py-md-5 my-md-5">
-      <div className="container">
+      <div className="container mt-5 pt-5 mt-md-0 pt-md-0">
         <div className="row">
           <div
             className="col-md-6 pt-5 pb-5 order-1 order-md-0"

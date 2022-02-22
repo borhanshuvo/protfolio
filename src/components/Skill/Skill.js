@@ -7,10 +7,10 @@ const Skill = () => {
       <div className="container">
         <h1 className="text-center saira-condensed">S k i l l s</h1>
         <hr />
-        <div className="row ms-5 mt-5">
+        <div className="row ms-md-5 ms-3 mt-5">
           {imageData.map((data, index) => (
             <div
-              className="col-md-3 pb-4"
+              className="col-md-3 col-6 pb-4"
               data-aos="zoom-in"
               data-aos-duration="3000"
               key={index}

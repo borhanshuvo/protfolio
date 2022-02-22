@@ -4,7 +4,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="text-center mail-div display-sm-none" data-aos="zoom-in" data-aos-duration="3000">
+      <div className="text-center mail-div display-sm-none w-100" data-aos="zoom-in" data-aos-duration="3000">
         <h4 className="mail-title">Let’s work together</h4>
         <h2 className="mail">
           <a
