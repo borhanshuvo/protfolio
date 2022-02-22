@@ -8,7 +8,10 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg pt-4 navbar-dark fixed-top" style={{ backgroundColor: "#1f2028" }}>
+      <nav
+        className="navbar navbar-expand-lg pt-4 navbar-dark fixed-top"
+        style={{ backgroundColor: "#1f2028" }}
+      >
         <div className="container-fluid">
           <div classNameName="ms-auto">
             <button
@@ -26,49 +29,49 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 navbar-style">
               <li className="nav-item pe-4">
-                <Link
+                <a
                   className="nav-link text-white"
                   aria-current="page"
-                  to="/home"
+                  href="#home"
                 >
                   HOME
-                </Link>
+                </a>
               </li>
               <li className="nav-item pe-4">
-                <Link
+                <a
                   className="nav-link text-white"
                   aria-current="page"
-                  to="/about"
+                  href="#about"
                 >
                   ABOUT
-                </Link>
+                </a>
               </li>
               <li className="nav-item pe-4">
-                <Link
+                <a
                   className="nav-link text-white"
                   aria-current="page"
-                  to="/project"
+                  href="#project"
                 >
                   PROJECTS
-                </Link>
+                </a>
               </li>
               <li className="nav-item pe-4">
-                <Link
+                <a
                   className="nav-link text-white"
                   aria-current="page"
-                  to="/blog"
+                  href="#blog"
                 >
                   BLOGS
-                </Link>
+                </a>
               </li>
               <li className="nav-item pe-4">
-                <Link
+                <a
                   className="nav-link text-white"
                   aria-current="page"
-                  to="/contact"
+                  href="#contact"
                 >
                   CONTACT
-                </Link>
+                </a>
               </li>
               <li className="nav-item pe-4">
                 <Link

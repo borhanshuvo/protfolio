@@ -17,13 +17,13 @@ const Blog = () => {
   }, []);
 
   return (
-    <>
+    <section className="my-md-5 py-md-5">
       <div className="container my-5">
         <h1 className="text-center saira-condensed">{authorDetails.title}</h1>
         <hr />
         <div className="row pt-5">
           {blogs.map((blog, index) => (
-            <div className="col-md-4 pb-5" key={index}>
+            <div className="col-md-4 pb-5" data-aos="zoom-in" data-aos-duration="3000" key={index}>
               <div className="card  text-dark text-center h-100">
                 <div className="card-header">
                   <h5 className="card-title text-uppercase">{blog.title}</h5>
@@ -52,7 +52,7 @@ const Blog = () => {
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

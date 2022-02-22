@@ -4,7 +4,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="text-center mail-div display-sm-none">
+      <div className="text-center mail-div display-sm-none" data-aos="zoom-in" data-aos-duration="3000">
         <h4 className="mail-title">Let’s work together</h4>
         <h2 className="mail">
           <a
@@ -17,15 +17,13 @@ const Footer = () => {
           </a>
         </h2>
       </div>
-      <div className="row">
-        <div className="col-md-6 order-1 order-md-0">
-          <p>
-            <span className="fs-20 text-sm-center">
-              Copyright &copy; {year}, Borhan Uddin, All Rights Reserved.
-            </span>
-          </p>
-        </div>
-        <div className="col-md-6 footer-social order-0 order-md-1 d-md-flex justify-content-end text-sm-center display-sm-none">
+      <div>
+        <p className="fs-16 text-center">
+          <span>
+            Copyright &copy; {year} Borhan Uddin, All Rights Reserved.
+          </span>
+        </p>
+        <div className="footer-social d-flex justify-content-center">
           <ul className="social">
             <li>
               <a

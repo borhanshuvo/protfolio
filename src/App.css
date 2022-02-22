@@ -22,7 +22,6 @@
 
 .scrol-icon {
   background-color: #1f2028;
-  border-radius: 50%;
   font-size: 30px;
   color: #ffffff;
   transition: 0.3s ease-in-out;
@@ -70,6 +69,12 @@
   background-color: gray;
   padding: 10px 20px;
   margin: 5px 5px;
+}
+
+.logo-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 40%;
 }
 /* About section css end */
 
@@ -164,22 +169,22 @@
 
 .footer-social .social li a.facebook {
   color: #00ccff;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .footer-social .social li a.gmail {
   color: #ff0066;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .footer-social .social li a.linkedin {
   color: #0066ff;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .footer-social .social li a.github {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .mail a {
@@ -211,6 +216,10 @@
 /* For responsive */
 
 @media screen and (max-width: 600px) {
+  .fs-16 {
+    font-size: 12px;
+  }
+
   .fs-20 {
     font-size: 14px;
   }

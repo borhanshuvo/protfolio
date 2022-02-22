@@ -8,11 +8,6 @@ import { Link } from "react-router-dom";
 import Typical from "react-typical";
 import developerImg from "../../images/developer.jpg";
 import resume from "../../resume/Borhan_Uddin_Resume.pdf";
-import About from "../About/About";
-import Blog from "../Blog/Blog";
-import Contact from "../Contact/Contact";
-import Footer from "../Footer/Footer";
-import Project from "../Project/Project";
 
 const Home = () => {
   const btnDesign = {
@@ -24,14 +19,16 @@ const Home = () => {
     borderRadius: "10px",
     textDecoration: "none",
   };
-  const textColor2 = { color: "#b4b5b5" };
-  const headingColor = { color: "#3A4256" };
-  const textColor = { color: "#3A3056" };
+
   return (
-    <>
-      <div className="container pt-5 pb-5">
-        <div className="row pt-5">
-          <div className="col-md-6 pt-5 pb-5">
+    <section className="py-md-5 my-md-5">
+      <div className="container">
+        <div className="row">
+          <div
+            className="col-md-6 pt-5 pb-5 order-1 order-md-0"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+          >
             <h5 className="pt-5">
               <span style={{ fontSize: "30px" }}>Hey, I'm BORHAN UDDIN.</span>{" "}
             </h5>
@@ -114,7 +111,11 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div className="col-md-6">
+          <div
+            className="col-md-6 order-0 order-md-1"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+          >
             <div className="ms-md-5 mt-md-5 pt-md-5">
               <img
                 src={developerImg}
@@ -127,23 +128,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div>
-          <About />
-        </div>
-        <div>
-          <Project />
-        </div>
-        <div>
-          <Blog />
-        </div>
-        <div>
-          <Contact />
-        </div>
-        <div>
-          <Footer />
-        </div>
       </div>
-    </>
+    </section>
   );
 };
 
