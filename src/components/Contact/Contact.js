@@ -44,8 +44,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="my-md-5 py-md-5">
-      <div className="container my-5">
+    <section className="mt-md-5 pt-md-5">
+      <div className="container mt-5">
         <h1 className="text-center saira-condensed">
           G e t &nbsp; i n &nbsp; T o u c h
         </h1>

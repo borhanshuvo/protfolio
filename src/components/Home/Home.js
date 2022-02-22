@@ -63,7 +63,7 @@ const Home = () => {
                 to={`${resume}`}
                 target="_blank"
                 download
-                className="mx-2"
+                className="me-2"
               >
                 <FontAwesomeIcon icon={faDownload} /> RESUME
               </Link>
