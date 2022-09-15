@@ -41,10 +41,10 @@ const Project = () => {
                   >
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src={pd.image} class="d-block w-100" alt="..." />
+                        <img src={pd.image} class="d-block w-100" loading="lazy" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img src={pd.image2} class="d-block w-100" alt="..." />
+                        <img src={pd.image2} class="d-block w-100" loading="lazy" alt="..." />
                       </div>
                     </div>
                   </div>

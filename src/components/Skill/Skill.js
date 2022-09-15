@@ -16,7 +16,7 @@ const Skill = () => {
               key={index}
             >
               <div>
-                <img src={data.img} className="logo-img" alt="" />
+                <img src={data.img} className="logo-img" loading="lazy" alt="" />
               </div>
             </div>
           ))}

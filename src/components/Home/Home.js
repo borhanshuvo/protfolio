@@ -123,6 +123,7 @@ const Home = () => {
                 style={{
                   borderRadius: "20px",
                 }}
+                loading="lazy"
                 alt=""
               />
             </div>

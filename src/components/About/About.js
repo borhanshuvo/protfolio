@@ -20,7 +20,7 @@ const About = () => {
             data-aos-duration="3000"
           >
             <div className="ps-4">
-              <img src={aboutImage} style={aboutImageStyle} alt="" />
+              <img src={aboutImage} style={aboutImageStyle} loading="lazy" alt="" />
             </div>
           </div>
           <div

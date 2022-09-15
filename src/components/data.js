@@ -1,3 +1,5 @@
+import afro1 from "../images/AFRO.png";
+import afro2 from "../images/AFRO2.png";
 import bootstrap from "../images/bootstrap.png";
 import clickToBuy from "../images/click_to_buy.jpg";
 import clickToBuy2 from "../images/click_to_buy_2.jpg";
@@ -7,12 +9,12 @@ import easyEssayWriting2 from "../images/easyEssayWriting2.png";
 import eventManagement from "../images/eventManagement.png";
 import eventManagement2 from "../images/eventManagement2.png";
 import express from "../images/express.png";
+import fastlane1 from "../images/Fastlane1.png";
+import fastlane2 from "../images/Fastlane2.png";
 import html from "../images/html5.png";
 import javascript from "../images/javascript.png";
 import mongodb from "../images/mongodb.png";
 import node from "../images/node.png";
-import premierLeague from "../images/premier_league.jpg";
-import premierLeague2 from "../images/premier_league_2.jpg";
 import react from "../images/react.png";
 import virtualExpert from "../images/virtualExpert.png";
 import virtualExpert2 from "../images/virtualExpert2.png";
@@ -66,15 +68,27 @@ export const projectData = [
   },
   {
     id: "5",
-    title: "English Premier League",
+    title: "Fastlane",
     description:
-      "English Premier League is a Sports related web application. Where user can see the team information",
+      "It is a driving learn platfrom",
     tools:
-      "React.js, React Router, HTML5, CSS3, Bootstrap, JavaScript and Netlify",
-    code: "https://github.com/borhanshuvo/english-premier-league",
-    live: "https://youthful-bose-290646.netlify.app/",
-    image: premierLeague,
-    image2: premierLeague2,
+      "React.js, React Router, HTML5, CSS3, Bootstrap, JavaScript",
+    code: "https://github.com/borhanshuvo/hey-way",
+    live: "https://fastlane.testserver.jamtalent.net",
+    image: fastlane1,
+    image2: fastlane2,
+  },
+  {
+    id: "6",
+    title: "Afro Group",
+    description:
+      "It is a solar selling platform",
+    tools:
+      "React.js, React Router, HTML5, CSS3, Bootstrap, JavaScript",
+    code: "https://github.com/borhanshuvo/afro",
+    live: "https://afro-group.netlify.app",
+    image: afro1,
+    image2: afro2,
   },
 ];
 
